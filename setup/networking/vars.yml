@@ -1,0 +1,27 @@
+---
+# Mapping of what hardware MAC addresses should be configured with specific IPs.
+mac_address_mapping:
+  # Balancer over built-in LAN.
+  "b8:27:eb:59:d2:7b":
+    name: bal1.pidramble.com
+    ip: "10.0.1.60"
+  "b8:27:eb:e0:50:db":
+    name: www1.pidramble.com
+    ip: "10.0.1.61"
+  "b8:27:eb:4a:6b:ed":
+    name: www2.pidramble.com
+    ip: "10.0.1.62"
+  "b8:27:eb:a9:ca:64":
+    name: www3.pidramble.com
+    ip: "10.0.1.59"
+  "b8:27:eb:a5:e9:d6":
+    name: db1.pidramble.com
+    ip: "10.0.1.63"
+  "b8:27:eb:50:9b:e3":
+    name: db2.pidramble.com
+    ip: "10.0.1.64"
+
+# Nameservers to use in resolv.conf.
+dns_nameservers:
+  - "8.8.8.8"
+  - "8.8.4.4"
